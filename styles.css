@@ -1,48 +1,8 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
 }
 
 .outer-container {
@@ -66,9 +26,16 @@ table {
 
 .login-form {
     display: flex;
+    flex-direction: column;
     height: 30%;
     padding-top: 15px; 
     padding-left: 36px;
+}
+
+.login-form > p {
+    font-size: large;
+    font-weight: bold; 
+    margin-bottom: 10px;
 }
 
 .header {
@@ -83,8 +50,35 @@ table {
     
 }
 
-
 .sign-up {
     height: 30%; 
     padding-left: 36px;
+}
+
+.first-row, .middle-row, .last-row {
+    display: flex;
+    gap: 60px; 
+}
+
+
+label {
+    font-size: x-small;
+    font-weight: 400;
+}
+
+input {
+    display: block; 
+    width: 12rem; 
+    border-color: #E5E7EB;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+.error {
+    border-color: red;
+}
+
+.error-msg {
+    color: red; 
+    font-size: x-small;
 }

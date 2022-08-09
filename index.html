@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="outer-container">
         <div class="img-sidebar">
@@ -15,8 +17,8 @@
         </div>
         <div class="content">
             <div class="header">
-                <p>This is not a real online service! You know you need something like this in your life 
-                    to realise your deepest dreams. 
+                <p>This is not a real online service! You know you need something like this in your life
+                    to realise your deepest dreams.
                     <br>
                     Sign up <em>now</em> to get started.
                 </p>
@@ -26,17 +28,48 @@
                 </p>
             </div>
             <div class="login-form">
-               <p>Let's do this!</p>
-               <div class="form-left"></div>
-               <div class="form-right"></div>
+                <form action="/" method="GET">
+                    <p>Let's do this!</p>
+                    <div class="first-row">
+                        <div class="first-row-left">
+                            <label for="first name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                        <div class="first-row-right">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </div>
+                    <div class="middle-row">
+                        <div class="middle-row-left">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="middle-row-right">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" name="phone-number" id="phone-number">
+                        </div>
+                    </div>
+                    <div class="last-row">
+                        <div class="last-row-left">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password">
+                            <p class="error-msg"></p>
+                        </div>
+                        <div class="last-row-right">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-password">
+                        </div>
+                    </div>
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account?
+                        <a href="">Log in</a>
+                    </p>
+                </form>
             </div>
-            <div class="sign-up">
-                <button>Create Account</button>
-                <p>Already have an account?
-                    <a href="">Log in</a>
-                </p>
-            </div>
+
         </div>
     </div>
 </body>
-</html> 
+
+</html>
