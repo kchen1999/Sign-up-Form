@@ -7,16 +7,22 @@
 
 .outer-container {
     display: flex;
+    justify-content: flex-start;
 }
 
 
 .content {
     font-family: Arial, Helvetica, sans-serif;
+    flex-grow: 1;
 }
 
 @font-face {
     font-family: Norse-Bold;
     src: url("/Norse-Bold.otf") format("opentype");
+}
+
+body {
+    background-color: whitesmoke;
 }
 
 .img-sidebar > img {
@@ -30,30 +36,33 @@
     height: 30%;
     padding-top: 15px; 
     padding-left: 36px;
+    background-color: white;
 }
 
-.login-form > p {
+form > p {
     font-size: large;
     font-weight: bold; 
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .header {
     height: 40%;
     font-weight: bold;
+    position: relative;
     padding-top: 150px; 
-    padding-right: 480px;
-    padding-left: 36px;
     background-color: whitesmoke;
     line-height: 1.2;
     font-size: large;
     
 }
 
-.sign-up {
-    height: 30%; 
-    padding-left: 36px;
+.header > p {
+    position: absolute; 
+    left: 36px; 
+    bottom: 48px; 
+    width: 560px; 
 }
+
 
 .first-row, .middle-row, .last-row {
     display: flex;
@@ -68,9 +77,11 @@ label {
 
 input {
     display: block; 
-    width: 12rem; 
+    width: 13.5rem; 
+    border-radius: 3px;
     border-color: #E5E7EB;
     border-style: solid;
+    border-width: thin;
     margin-bottom: 10px;
 }
 
@@ -81,4 +92,30 @@ input {
 .error-msg {
     color: red; 
     font-size: x-small;
+}
+
+button {
+    background-color: #596D48;
+    color: white; 
+    font-weight: bold;
+    padding: 8px 40px; 
+    border-radius: 6px;
+    margin: 25px 0px; 
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+}
+
+.submit-button {
+    background-color: whitesmoke;
+    margin-left: 36px;
+    height: 30%; 
+}
+
+.submit-button > p {
+    font-size: small;
 }

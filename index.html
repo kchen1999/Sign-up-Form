@@ -21,53 +21,54 @@
                     to realise your deepest dreams.
                     <br>
                     Sign up <em>now</em> to get started.
-                </p>
-                <p>
+                    <br>
                     <br>
                     You <em>know</em> you want to.
                 </p>
             </div>
-            <div class="login-form">
-                <form action="/" method="GET">
+            <div class="login-form">  
+                <form action="/" method="GET">   
                     <p>Let's do this!</p>
                     <div class="first-row">
-                        <div class="first-row-left">
+                        <div>
                             <label for="first name">FIRST NAME</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <input type="text" name="first-name" id="first-name" required>
                         </div>
-                        <div class="first-row-right">
+                        <div>
                             <label for="last-name">LAST NAME</label>
                             <input type="text" name="last-name" id="last-name">
                         </div>
                     </div>
                     <div class="middle-row">
-                        <div class="middle-row-left">
+                        <div>
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
-                        <div class="middle-row-right">
+                        <div>
                             <label for="phone-number">PHONE NUMBER</label>
                             <input type="tel" name="phone-number" id="phone-number">
                         </div>
                     </div>
                     <div class="last-row">
-                        <div class="last-row-left">
+                        <div>
                             <label for="password">PASSWORD</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
                             <p class="error-msg"></p>
                         </div>
-                        <div class="last-row-right">
+                        <div>
                             <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm-password" id="confirm-password">
+                            <input type="password" name="confirm-password" id="confirm-password" required>
                         </div>
                     </div>
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account?
-                        <a href="">Log in</a>
-                    </p>
+
                 </form>
             </div>
-
+            <div class="submit-button">
+                <button type="submit">Create Account</button>
+                <p>Already have an account?
+                    <a href="">Log in</a>
+                </p>
+            </div>
         </div>
     </div>
 </body>
