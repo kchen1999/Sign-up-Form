@@ -38,16 +38,16 @@ body {
     display: flex; 
     align-items: center;
     justify-content: center;
+    background-color: rgba(0,0,0,0.5);
     font-family: Norse-Bold;
-    font-size: 100px; 
+    font-size: 72px; 
     color: white;
     top: 170px; 
 }
 
 
 .logo-container > img {
-    width: 25%; 
-    height: 70%;
+    width: 18%; 
 }
 
 .login-form {
